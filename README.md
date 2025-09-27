@@ -9,6 +9,11 @@ git clone https://github.com/JU4N98/tecnomate
 cd /tecnomate
 bash run.sh path_to_problem path_to_your_solution 
 ```
+As an example:
+```sh
+bash run.sh ./tecnomate_20XX/problem_name/ ./tecnomate_20XX/problem_name/solution.cpp
+```
+
 The possibles return values are:
 ```
 COMPILATION ERROR: the compilation of your code failed.
