@@ -12,6 +12,6 @@ Una linea por cada caso de prueba con el string ":)" en caso de que puedas ganar
 ## Ejemplos
 |Entrada|Salida|
 |-|-|
-|2||
-|ANARAP|:)|
-|FRUTAFRESCA|:,(|
+|2|:)|
+|ANARAP|:,(|
+|FRUTAFRESCA||
