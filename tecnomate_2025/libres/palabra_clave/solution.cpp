@@ -24,7 +24,7 @@ int main() {
   int t; cin >> t;
   while(t--) {
     string k; cin >> k;
-    cout << ((sz(k)+25)%2 ? ":)" : ":,(") << "\n";
+    cout << ((sz(k)==1 || sz(k)+25)%2 ? ":)" : ":,(") << "\n";
   }
 
   return 0;
