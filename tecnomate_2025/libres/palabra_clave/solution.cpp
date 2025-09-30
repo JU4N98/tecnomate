@@ -11,10 +11,42 @@
 #define ub upper_bound
 #define fst first
 #define snd second
+#define all(v) v.begin(), v.end()
 using namespace std;
 
 typedef long long ll;
 typedef pair<int, int> ii;
+
+unordered_map<vector<int>,int> grundy;
+int solve(vector<int> &cnt){
+  sort(all(cnt));
+  if(grundy.count(cnt)) return grundy[cnt];
+
+  int rem = 0, rem2 = 0;
+  forn(i, 26) {
+    rem += cnt[i]>=2;
+    rem2 += cnt[i]==2;
+  }
+  if(rem == 1 && rem2==1) {
+    grundy[cnt] = 1;
+    return 1;
+  }
+
+  vector<bool> mex(30, 0);
+  vector<int> aux = cnt;
+  forn(i,26) {
+    if(!cnt[i]) continue;
+    aux[i]--;
+    mex[solve(aux)] = 1;
+    aux = cnt;
+  }
+
+  forn(i, 30) if(!mex[i]) {
+    grundy[cnt] = i; 
+    return i;
+  }
+  assert(0);
+}
 
 int main() {
   ios::sync_with_stdio(false);
@@ -24,7 +56,9 @@ int main() {
   int t; cin >> t;
   while(t--) {
     string k; cin >> k;
-    cout << ((sz(k)==1 || sz(k)+25)%2 ? ":)" : ":,(") << "\n";
+    vector<int> cnt(26,1);
+    for(auto ki: k) cnt[ki-'A']++;
+    cout << (solve(cnt) ? ":)" : ":,(") << "\n";
   }
 
   return 0;
