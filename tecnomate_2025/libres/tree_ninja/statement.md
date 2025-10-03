@@ -7,13 +7,11 @@ Como la gente se estaba aburriendo de jugar _Fruit Ninja_ los desarrolladores cr
 Dado un arbol planar, podrias calcular la maxima cantidad de puntos que podes conseguir?
 
 ## Entrada
-Un entero $T$ $(1 <= T <= 10^4)$ representando la cantidad de casos de prueba.
-Cada caso de prueba contiene:
-- Una nueva linea con un entero $N$ $(1 <= N <= 10^4)$, la cantidad de nodos en el arbol planar.
-- $N$ lineas con dos enteros $X$ e $Y$ $(-10^4 <= X, Y <= 10^4)$, las coordenadas del i-esimo nodo.
+Una nueva linea con un entero $N$ $(1 <= N <= 10^3)$, la cantidad de nodos en el arbol planar.
+- $N$ lineas con dos enteros $X$ e $Y$ $(-10^8 <= X, Y <= 10^8)$, las coordenadas del i-esimo nodo.
 - $N-1$ lineas con dos enteros $U$ y $V$ $(1 <= U, V <= N)$, indicando una arista entre el nodo $U$ y $V$.
 
-No hay tres puntos colineales en un mismo caso de prueba, nunca se cruzan dos aristas y la suma de $N$ sobre todos los casos de prueba no excede $10^4$.
+No hay tres puntos colineales y nunca se cruzan dos aristas.
 
 ## Salida
 Un entero positivo P, la maxima cantidad de puntos que puede conseguir un jugador.
@@ -21,8 +19,7 @@ Un entero positivo P, la maxima cantidad de puntos que puede conseguir un jugado
 ## Ejemplos
 |Entrada|Salida|
 |-|-|
-|1|4|
-|4||
+|4|4|
 |1 2||
 |1 0||
 |1 1||

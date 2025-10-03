@@ -76,43 +76,43 @@ int main() {
   ios::sync_with_stdio(false);
   cin.tie(NULL);
   cout.tie(NULL);
-
-  int t; cin >> t;
-  while(t--) {
-    int n; cin >> n;
-    vector<pto> pts(n);
-    forn(i,n) cin >> pts[i].x >> pts[i].y;
-
-    vector<ii> edges;
-    forn(i,n-1) {
-      int u, v; cin >> u >> v; u--; v--;
-      edges.pb({u,v});
-    }
-
-    int ans = 0;
-    forn(i,n) {
-      int cur = 1;
-      vector<pto> evs;
-      forn(j,n-1) {
-        if(edges[j].fst == i || edges[j].snd == i) {
-          cur++;
-        } else {
-          pto u = pts[edges[j].fst];
-          pto v = pts[edges[j].snd];
-          pto nu = u * -1;
-          pto nv = u * -1;
-          u.id = v.id = nu.id = nv.id = j; 
-          evs.pb(u);
-          evs.pb(v);
-          evs.pb(nu);
-          evs.pb(nv);
-        }
-      }
-      cur += solve(n, pts[i], evs);
-      ans = max(ans, cur);
-    }
-    cout << ans << "\n";
+  
+  int n; cin >> n;
+  vector<pto> pts(n);
+  forn(i,n) {
+    cin >> pts[i].x >> pts[i].y;
   }
+
+  vector<ii> edges;
+  forn(i,n-1) {
+    int u, v; cin >> u >> v; u--; v--;
+    edges.pb({u,v});
+  }
+
+  int ans = 0;
+  vector<pto> evs;
+  forn(i,n) {
+    int cur = 1;
+    forn(j,n-1) {
+      if(edges[j].fst == i || edges[j].snd == i) {
+        cur++;
+      } else {
+        pto u = pts[edges[j].fst];
+        pto v = pts[edges[j].snd];
+        pto nu = u * -1;
+        pto nv = u * -1;
+        u.id = v.id = nu.id = nv.id = j; 
+        evs.pb(u);
+        evs.pb(v);
+        evs.pb(nu);
+        evs.pb(nv);
+      }
+    }
+    cur += solve(n, pts[i], evs);
+    ans = max(ans, cur);
+    evs.clear();
+  }
+  cout << ans << "\n";
 
   return 0;
 }
