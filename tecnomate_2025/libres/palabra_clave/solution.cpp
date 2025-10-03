@@ -17,26 +17,25 @@ using namespace std;
 typedef long long ll;
 typedef pair<int, int> ii;
 
-unordered_map<vector<int>,int> grundy;
+map<vector<int>,int> grundy;
 int solve(vector<int> &cnt){
-  sort(all(cnt));
+  sort(cnt.begin(), cnt.begin()+26);
   if(grundy.count(cnt)) return grundy[cnt];
 
-  int rem = 0, rem2 = 0;
-  forn(i, 26) {
-    rem += cnt[i]>=2;
-    rem2 += cnt[i]==2;
-  }
-  if(rem == 1 && rem2==1) {
-    grundy[cnt] = 1;
-    return 1;
+  int rem = 0;
+  forn(i, 26) rem += cnt[i];
+  if(rem == 0) {
+    grundy[cnt] = 0;
+    return 0;
   }
 
   vector<bool> mex(30, 0);
   vector<int> aux = cnt;
-  forn(i,26) {
+  forn(i,27) {
     if(!cnt[i]) continue;
+    if(rem == 1 && i == 26) continue;
     aux[i]--;
+    if(i != 26 && aux[i] == 0) aux[26]++;
     mex[solve(aux)] = 1;
     aux = cnt;
   }
@@ -56,9 +55,10 @@ int main() {
   int t; cin >> t;
   while(t--) {
     string k; cin >> k;
-    vector<int> cnt(26,1);
+    vector<int> cnt(27,0);
     for(auto ki: k) cnt[ki-'A']++;
-    cout << (solve(cnt) ? ":)" : ":,(") << "\n";
+    forn(i, 26) cnt[26] += cnt[i]==0;
+    cout << (solve(cnt) ? ":)" : ":(") << "\n";
   }
 
   return 0;
