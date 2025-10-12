@@ -1,0 +1,2 @@
+# Revolución Industrial
+El problema puede modelarse como: dado un grafo no dirigido con costo y tiempo en las aristas, donde algunos nodos tienen demandas y otros producción, cuál es el mínimo costo de si solo podemos mover la producción un tiempo $M$. Esto puede resolverse usando un algoritmo de Min Cost - Max Flow, donde conectamos cada nodo productor con todos los nodos demandantes a un $tiempo <= M$. Si el flujo máximo es igual a la suma de las demandas entonces la respuesta es el Min Cost de la red planteada, caso contrario sos DESPEDIDO.  
