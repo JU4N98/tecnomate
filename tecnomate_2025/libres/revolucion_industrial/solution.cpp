@@ -111,8 +111,8 @@ int main() {
         int u, v; cin >> u >> v; 
         int minu; cin >> minu;
         u--, v--;
-        G[u][v] = minu;
-        G[v][u] = minu;
+        G[u][v] = min(G[u][v], minu);
+        G[v][u] = min(G[v][u], minu);
     }
     floyd(c+p);
 
