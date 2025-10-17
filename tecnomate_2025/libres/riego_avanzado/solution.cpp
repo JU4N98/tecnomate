@@ -28,8 +28,8 @@ int main() {
 
     vector<ll> riego(n*m);
     forn(r,n) forn(c,m) {
-        ll h = min(r+1, min(n-r, k));
-        ll w = min(c+1, min(m-c, k));
+        ll h = min(r,n-k) - max(r-(k-1),0) + 1;
+        ll w = min(c,m-k) - max(c-(k-1),0) + 1;
         riego[r*m + c] = h*w;
     }
     sort(all(c));
