@@ -1,0 +1,8 @@
+0
+6
+pizza_tomato dough tomato 1 2
+pizza_cheese dough cheese 5 10
+pizza_classic pizza_tomato cheese 5 5
+pizza_classic pizza_cheese tomato 1 2
+pizza_ham pizza_classic ham 7 5
+pizza_hawaii pizza_tomato pineapple 3 1

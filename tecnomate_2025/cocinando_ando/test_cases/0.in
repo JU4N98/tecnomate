@@ -1,0 +1,8 @@
+15
+6
+empanada_queso empanada_base queso 1 2
+empanada_tomate empanada_base tomate 5 10
+empanada_clasica empanada_queso tomate 5 5
+empanada_clasica empanada_tomate queso 1 2
+empanada_bondiola empanada_clasica bondiola 7 6
+empanada_picante empanada_queso aji 3 1
