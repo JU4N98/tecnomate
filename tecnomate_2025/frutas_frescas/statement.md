@@ -17,13 +17,17 @@ La ultima linea consiste de una coordenada X,Y (-1000 <= X,Y <= 1000), la coorde
 # Output
 El output consiste de un solo entero P, la mínima cantidad de pesos que tienen que pagar para llevar todas las frutas a la verdulería.
 
-# Sample
+# Sample Input
+```
 2 2
 1 0
 0 -1
 -1 1
 2 -1
 0 0
+```
 
-# Sample output
+# Sample Output
+```
 5
+```
