@@ -32,4 +32,6 @@ La primera longitud de lado debe ser más pequeña que la segunda.
 
 | Entrada | Salida |
 |---|---|
-| <pre>15<br>5<br>7 2 5 11 3</pre> | <pre>3 5</pre> |
+|15|3 5|
+|5||
+|7 2 5 11 3||

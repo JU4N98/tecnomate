@@ -30,6 +30,9 @@ El índice del primer elemento en la secuencia es siempre 1.
 
 | Entrada | Salida |
 |---|---|
-| <pre>5<br>1 2 3 4 5</pre> | <pre>1</pre> |
-| <pre>7<br>1 2 3 4 5 8 8</pre> | <pre>6</pre> |
-| <pre>3<br>7 5 2</pre> | <pre>2</pre> |
+|5|1|
+|1 2 3 4 5 |6|
+|7|2|
+|1 2 3 4 5 8 8 ||
+|3||
+|7 5 2 ||
