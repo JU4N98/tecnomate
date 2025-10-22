@@ -21,38 +21,32 @@ Armada con la lista de recetas y un presupuesto B, la chef quiere proporcionar u
 * Un plato puede aparecer más de una vez como plato resultante en la lista de recetas; si hay más de una forma de obtener un plato, se elige siempre la que produce el menor costo total; si los costos totales son iguales, se debe elegir la que produce el mayor prestigio total.
 * Las recetas son tales que ningún plato D puede obtenerse agregando uno o más ingredientes a D mismo.
 
-## Input
+## Entrada
 
-* La primera línea consiste del presupuesto B, un entero.
-* La segunda línea consiste del número N de recetas, un entero.
+* La primera línea consiste del presupuesto $B$ $(0 <= B <= 10000)$, un entero.
+* La segunda línea consiste del número N $(0 <= N <= 1000000)$ de recetas, un entero.
 * Cada una de las siguientes N líneas describe una receta, como los siguientes elementos separados por espacios simples: el nombre del plato derivado (string); el nombre del plato base (string); el ingrediente agregado (string); el precio agregado (entero); el prestigio agregado (entero).
 
-## Límites
 
-* 0 ≤ B ≤ 10 000;
-* 0 ≤ N ≤ 1 000 000;
+Otros límites:
+
 * puede haber como máximo 10 000 platos diferentes (elementales o derivados);
-* los costos y prestigios en las recetas están entre 1 y 10 000 (inclusive);
+* los costos y prestigios en las recetas están entre 1 y 10000 (inclusive);
 * las cadenas contienen como máximo 20 caracteres ASCII (letras, dígitos y '_' solamente).
 
-## Output
+## Salida
 
 La salida debe consistir de dos líneas, cada una con un solo entero. En la primera línea: el prestigio máximo acumulado dentro del presupuesto. En la segunda línea: el costo mínimo acumulado correspondiente al prestigio máximo acumulado, necesariamente menor o igual al presupuesto.
 
-## Sample Input
-```
-15
-6
-empanada_queso empanada_base queso 1 2
-empanada_tomate empanada_base tomate 5 10
-empanada_clasica empanada_queso tomate 5 5
-empanada_clasica empanada_tomate queso 1 2
-empanada_bondiola empanada_clasica bondiola 7 6
-empanada_picante empanada_queso aji 3 1
-```
+## Ejemplos
 
-## Sample Output
-```
-25
-15
-```
+|Entrada|Salida|
+|-|-|
+|15|25|
+|6|15|
+|empanada_queso empanada_base queso 1 2||
+|empanada_tomate empanada_base tomate 5 10||
+|empanada_clasica empanada_queso tomate 5 5||
+|empanada_clasica empanada_tomate queso 1 2||
+|empanada_bondiola empanada_clasica bondiola 7 6||
+|empanada_picante empanada_queso aji 3 1||
