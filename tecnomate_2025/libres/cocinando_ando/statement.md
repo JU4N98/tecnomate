@@ -5,7 +5,9 @@ La chef de un restaurante que aspira a una estrella Michelin quiere mostrar una 
 Para medir el prestigio de sus platos, la chef mantiene una lista de recetas, junto con sus costos e ingredientes. Para cada receta, un plato derivado se obtiene de un plato base agregando un ingrediente. La receta menciona dos piezas adicionales de información: el costo de aplicar la receta, además del costo del plato base, y el prestigio que la receta agrega al prestigio del plato base. La chef mide el prestigio en sus propias unidades, llamadas "unidades de prestigio".
 
 Por ejemplo, una lista de recetas para hacer empanadas se ve así:
+
 * empanada_queso empanada_base queso 1 2
+
 * empanada_jamon_queso empanada_queso jamon 5 5
 
 Aquí, empanada_base es un plato elemental, un plato sin receta asociada, un plato tan simple que su costo es insignificante (fijado en 0) y su prestigio también es 0. La chef puede obtener el plato derivado empanada_queso agregando el ingrediente queso al plato base empanada_base, por un costo de 1 peso y una ganancia de 2 unidades de prestigio. Una empanada_jamon_queso se obtiene de una empanada_queso agregando jamon, por un costo adicional de 5, y un prestigio de 5 agregado al prestigio del plato base; esto significa que el costo total de empanada_jamon_queso es 6 y su prestigio total es 7.
