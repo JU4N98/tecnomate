@@ -1,6 +1,6 @@
-# Frutas frescas
+# Frutas Frescas
 
-Juan y Mariano están realizando un nuevo emprendimiento: una verdulería llamada "Frutas frescas"
+Juan y Mariano están realizando un nuevo emprendimiento: una verdulería llamada "Frutas Frescas"
 
 Para abastecer su negocio, tienen que buscar frutas a lo largo de toda la ciudad, la cual podemos representar como un plano. Para ello, quieren contratar repartidores que las busquen, ya que no tienen muchas ganas de caminar.
 
