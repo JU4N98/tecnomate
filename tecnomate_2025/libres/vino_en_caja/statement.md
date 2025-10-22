@@ -6,7 +6,7 @@ Debido a este particular método, sus entrenadores se ponen muy nerviosos al no 
 Nota: si la competencia dura T minutos, solo pueden realizarse envíos en los minutos 0 a T-1, ya que en el minuto T la competencia habría finalizado.
 
 ## Entrada
-Una línea con tres números N, P y T $(1<=N,T<=2000, 0<=P<=1)$ representando la cantidad de problemas, la probabilidad de resolver un problema y el tiempo en minutos que dura la competencia respectivamente. Los números N y T son enteros, mientras que T es un número real con hasta dos dígitos después de la coma.
+Una línea con tres números N, P y T $(1<=N,T<=2000, 0<=P<=1)$ representando la cantidad de problemas, la probabilidad de resolver un problema y el tiempo en minutos que dura la competencia respectivamente. Los números N y T son enteros, mientras que P es un número real con hasta dos dígitos después de la coma.
 
 ## Salida
 Una línea con un número real, el valor esperado de problemas resueltos por el equipo al terminar la competencia. El error relativo debe ser menor a 10<sup>-6</sup>.
