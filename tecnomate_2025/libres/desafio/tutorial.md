@@ -1,4 +1,3 @@
-# Vino en caja
+# Desafio
 
-Podemos hacer uso de programación dinámica, para representar la probabilidad de que se hayan resuelto una cantidad j de problemas al comienzo del minuto i de esta manera: dp[i][j]. Luego en cada momento, existirá una probabilidad P de avanzar al siguiente minuto con un problema resuelto más, y una probabilidad (1-P) de avanzar al siguiente minuto con la misma cantidad de problemas resueltos. Cabe aclarar que al llegar a tener N problemas resueltos, siempre se avanzará al minuto siguiente con la misma cantidad de problemas resueltos.
-Finalmente, se deben sumar las probabilidades de llegar al minuto T con 0,1,...,N problemas resueltos.
+Queremos que el area sea de un triangulo, por lo que debe cumplir con B*H/2 = N*M/K, entonces 2*N*M/K = B*H. Ahora, por ser un poligono con sus puntos en puntos enteros, su area multiplicada por 2 siempre sera un entero (por teorema de pick). Luego, B*H es entero, entonces 2*N*M/K tambien. Luego, queda determinar B y H. Podemos hacer K=Q*R y determinar Q=gcd(N,K) y R=K/Q. Entonces, si este Q!=1, B=2*N/Q siempre será menor o igual a N y H=M/R, quedando menor a M. Sino, se intercambian R y Q.

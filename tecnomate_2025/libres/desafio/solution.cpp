@@ -13,15 +13,15 @@
 #define snd second
 #define test_case int tttt; cin >> tttt; while(tttt--)
 #define all(v) v.begin(), v.end()
-
+ 
 #ifdef ANARAP
 // local
 #else
 // judge
 #endif
-
+ 
 using namespace std;
-
+ 
 typedef long long ll;
 typedef pair<int,int> ii;
 typedef vector<int> vi;
@@ -29,34 +29,45 @@ typedef vector<string> vc;
 typedef vector<ll> vll;
 typedef vector<ii> vii;
 typedef vector<bool> vb;
-
-typedef long double ld;
-
+ 
+ll gcd(ll a, ll b) {
+	if (b == 0) return a;
+	return gcd(b, a%b);
+}
+ 
 int main() {
-		// agregar g++ -DANARAP en compilacion
+	// agregar g++ -DANARAP en compilacion
 #ifdef ANARAP
-		freopen("input.in", "r", stdin);
-		// freopen("output.out","w", stdout);
+	freopen("input.in", "r", stdin);
+	// freopen("output.out","w", stdout);
 #endif
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
-	ld N,P,T;
-	cin>>N>>P>>T;
-	vector<vector<ld>> dp(T+1,vector<ld>(N+1));
-	dp[0][0]=1;
-	forn(i,T){
-		forn(j,N){
-			dp[i+1][j+1]+=dp[i][j]*P;
-			dp[i+1][j]+=dp[i][j]*(1-P);
+	//test_case{
+	ll N,M,K;
+	cin>>N>>M>>K;
+	if((2*N*M)%K==0){
+		cout<<"SI"<<'\n';
+		
+		ll b,h,aux=gcd(N,K);
+		if(aux==K){
+			b=2*N/aux;
+			K/=aux;
+			h=M/K;
 		}
-		dp[i+1][N]+=dp[i][N];
+		else{
+			b=N/aux;
+			K/=aux;
+			h=2*M/K;
+			
+		}
+		cout<<0<<" "<<0<<'\n';
+		cout<<b<<" "<<0<<'\n';
+		cout<<0<<" "<<h<<'\n';
+		
 	}
-	ld ans=0;
-	
-	forn(i,N+1){
-		ans+=(i*dp[T][i]);
-	}
-	cout<<fixed<<setprecision(15)<<ans<<'\n';
+	else cout<<"NO\n";
+	//};
 	return 0;
 }
