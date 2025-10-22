@@ -38,3 +38,5 @@ for infile in "$TEST_DIR"/*.in; do
     cp "$infile" "$destdir/$base.in"
     cp "$outfile" "$destdir/$base.ans"
 done
+
+rm -rf "$TEST_DIR"
