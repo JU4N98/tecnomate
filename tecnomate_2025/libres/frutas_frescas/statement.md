@@ -14,27 +14,26 @@ El pago que recibe cada repartidor equivale a 1 peso por cada unidad de distanci
 
 Como Juan y Mariano son optimizadores natos, quieren minimizar el costo de llevar todas las frutas a la verdulería, ¿podrías ayudarlos?
 
-# Input
+# Entrada
 El input consiste de varias líneas:
+
 * Una línea con elementos N y M, (1 <= N,M <= 1000), representando N frutas y M repartidores.
+
 * N líneas con coordenadas X,Y (-1000 <= X,Y <= 1000), representando la coordenada de cada una de las frutas.
+
 * M líneas con coordenadas X,Y (-1000 <= X,Y <= 1000), representando la coordenada inicial de cada uno de los repartidores.
+
 * La última línea consiste de una coordenada X,Y (-1000 <= X,Y <= 1000), la coordenada de la verdulería.
 
-# Output
+# Salida
 El output consiste de un solo entero P, la mínima cantidad de pesos que tienen que pagar para llevar todas las frutas a la verdulería.
 
-# Sample Input
-```
-2 2
-1 0
-0 -1
--1 1
-2 -1
-0 0
-```
-
-# Sample Output
-```
-5
-```
+# Ejemplos
+|Entrada|Salida|
+|-|-|
+|2 2|5|
+|1 0||
+|0 -1||
+|-1 1||
+|2 -1||
+|0 0||
