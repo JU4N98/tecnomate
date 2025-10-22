@@ -14,7 +14,7 @@ mkdir -p "$AUX_DIR"
 cp -r "$PROBLEM_PATH/data" "$AUX_DIR/"
 
 # Copy problem.yaml
-cp "$PROBLEM_PATH/problem.yaml" "$AUX_DIR/problem.yaml"
+cp "$PROBLEM_PATH/domjudge-problem.ini" "$AUX_DIR/domjudge-problem.ini"
 
 # Generate PDF from statement.md
 mkdir -p "$AUX_DIR/attachments"
