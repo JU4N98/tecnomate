@@ -1,4 +1,4 @@
-# Verano
+# C - Verano
 
 Se acerca el verano y las altas temperaturas en Santa Fe. Para que los estudiantes puedan estudiar y refrescarse, el decanato de la UTN-FRSF (Universidad Tecnológica Nacional - Facultad Regional Santa Fe) ha decidido construir una nueva piscina en uno de los patios de la facultad.
 

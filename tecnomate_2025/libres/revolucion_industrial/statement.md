@@ -1,4 +1,4 @@
-# Revolución Industrial
+# E - Revolución Industrial
 
 Estamos en el siglo XVIII en plena [_Revolución Industrial_](https://es.wikipedia.org/wiki/Revoluci%C3%B3n_Industrial) y trabajamos en la mayor empresa carbonífera del país. Sin embargo, tenemos dificultades para poder hacer los envíos de carbón a las ciudades a tiempo. El dueño de la empresa nos acaba de dar una última advertencia: o solucionamos el problema para fin de mes o podemos buscar un nuevo trabajo.
 

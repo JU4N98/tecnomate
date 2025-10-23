@@ -1,4 +1,4 @@
-# TOC
+# G - TOC
 
 Como todos saben, Monica Geller tiene un Trastorno Obsesivo Compulsivo (TOC) con el orden y la limpieza. Últimamente, ha estado organizando todo en su apartamento (especias, toallas, e incluso las películas de Chandler) y asignando a cada ítem un "valor numérico" basado en algún criterio que solo ella entiende (quizás nivel de limpieza, fecha de caducidad o "sensación de orden").
 

@@ -1,4 +1,4 @@
-# Cocinando ando
+# B - Cocinando ando
 
 La chef de un restaurante que aspira a una estrella Michelin quiere mostrar una selección de sus platos estrella para los inspectores. Para esto, ha asignado un presupuesto máximo B, y quiere maximizar el prestigio acumulado de los platos que muestra a los inspectores.
 
