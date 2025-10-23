@@ -7,7 +7,7 @@ La más reciente novedad de _SpeedForces_ es el _SpeedPredictor_, lo último en 
 1. $= E$, luego de la competencia tu ELO es igual a $E$.
 2. $+ E$, luego de la competencia a tu ELO se le suma $E$.
 
-¡Pero todavía hay más! Tu entrenador, Matías, esta interesado en saber cual sería tu máximo ELO si compitieras sólo en un rango $[L, R]$ de todas estas competencias. Cabe aclarar que podés saltearte las competencias que quieras con tal de maximizar tu ELO ¿Podés darle una mano a Mati para encontrar la respuesta a cada una de sus consultas?  
+¡Pero todavía hay más! Tu entrenador, Matías, esta interesado en saber cual sería tu máximo ELO si compitieras sólo en un rango $[L, R]$ de todas estas competencias, comenzando con $ELO=0$. Cabe aclarar que podés saltearte las competencias que quieras con tal de maximizar tu ELO, siempre respetando el orden de las mismas ¿Podés darle una mano a Mati para encontrar la respuesta a cada una de sus consultas?  
 
 ## Entrada
 Una línea con un entero $N$ $(1 <= N <= 2*10^5)$, la cantidad de competencias en el año.
