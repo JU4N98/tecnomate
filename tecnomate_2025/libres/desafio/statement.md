@@ -10,7 +10,7 @@ Una línea con tres enteros N, M y K $(1 <= N,M <= 10^9, 2 <= K <= 10^9)$.
 
 
 ## Salida
-Si existen los puntos, imprime "SI", seguido de tres líneas, conteniendo los puntos X<sub>i</sub>,Y<sub>i</sub> (las coordenadas de los puntos, con un punto por línea). Si hay múltiples soluciones, imprima cualquiera.  
+Si existen los puntos, imprime "SI", seguido de tres líneas, conteniendo los puntos $X_i,Y_i$ (las coordenadas de los puntos, con un punto por línea). Si hay múltiples soluciones, imprima cualquiera.  
 Si no existe solución, imprima "NO".
 
 
