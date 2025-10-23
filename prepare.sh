@@ -19,3 +19,7 @@ cp "$PROBLEM_PATH/domjudge-problem.ini" "$AUX_DIR/domjudge-problem.ini"
 # Generate PDF from statement.md
 mkdir -p "$AUX_DIR/attachments"
 pandoc "$PROBLEM_PATH/statement.md" -o "$AUX_DIR/attachments/statement.pdf"
+
+cd "$2" 
+zip -r ../"$2" * 
+cd ..

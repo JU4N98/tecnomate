@@ -4,7 +4,7 @@ Como todos saben, Monica Geller tiene un Trastorno Obsesivo Compulsivo (TOC) con
 
 Esto ha resultado en largas secuencias de números.
 
-El TOC de Monica no la deja tranquila. Para sentirse satisfila, necesita encontrar "patrones perfectos" en sus secuencias. Para ella, un patrón perfecto es una **secuencia aritmética continua**, es decir, una subsecuencia de números consecutivos donde la diferencia entre cada número y el siguiente es siempre la misma.
+El TOC de Monica no la deja tranquila. Para sentirse satisfecha, necesita encontrar "patrones perfectos" en sus secuencias. Para ella, un patrón perfecto es una **secuencia aritmética continua**, es decir, una subsecuencia de números consecutivos donde la diferencia entre cada número y el siguiente es siempre la misma.
 
 Pero hay una condición más (¡obviamente, es Monica!). Para que ella esté *realmente* satisfecha y pueda dejar de organizar, el patrón debe continuar **perfectamente hasta el último elemento de la secuencia**.
 
