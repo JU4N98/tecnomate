@@ -40,10 +40,10 @@ chmod +x "sol"
 # tests execution
 passed=0
 total=0
-for input_file in "$path_to_problem"/test_cases/*.in; do
+for input_file in "$path_to_problem"/data/*/*.in; do
     base_name="${input_file%.in}"
-    output_file="cur.out"
-    expected_file="${base_name}.out"
+    output_file="cur.ans"
+    expected_file="${base_name}.ans"
     
     echo -n "Test #$(basename "$input_file" .in): "
     "./sol" < "$input_file" > "$output_file"

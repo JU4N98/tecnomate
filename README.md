@@ -23,15 +23,19 @@ ACCEPTED: all test passed.
 This script only checks the correctness of your code, you may receive ACCEPTED but it could be TIME LIMIT EXCEEDED during contest.
 
 # Contributing 
-Just create a branch from the current tecnomate edition i.e. tecnomate_20XX and add problems with the following structure:
+Create a branch from the current tecnomate edition i.e. tecnomate_20XX and add problems with the following structure:
 ```
 tecnomate_20XX
 └── problem_name
+    ├── data
+    │   ├── sample
+    │   │   ├── 1.ans
+    │   │   └── 1.in
+    │   └── secret
+    │       ├── 2.ans
+    │       └── 2.in
     ├── solution.cpp
     ├── statement.md
-    ├── test_cases
-    │   ├── 1.in
-    │   └── 1.out
     └── tutorial.md
 ```
 Please check and try to match the format of each of the sample files.
