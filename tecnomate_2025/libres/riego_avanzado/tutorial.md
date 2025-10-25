@@ -1,0 +1,2 @@
+# Riego Avanzado
+Para maximizar la ganancia hay que asignar los paquetes con más semillas a las celdas que son regadas más veces. Ahora solo queda calcular la cantidad de veces que cada celda es regada, esto puede hacerse en $O(1)$ con una cuenta. Luego solo queda multiplicar las cantidades de semillas más grandes por las celdas que son regadas más veces y sumar el resultado a la respuesta. La complejidad final es $O(log_2(N*M)*N*M + log_2(P)*P)$ porque necesitamos ordenar las celdas y paquetes de semillas.
