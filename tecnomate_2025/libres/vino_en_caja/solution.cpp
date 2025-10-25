@@ -57,6 +57,6 @@ int main() {
 	forn(i,N+1){
 		ans+=(i*dp[T][i]);
 	}
-	cout<<fixed<<setprecision(15)<<ans<<'\n';
+	cout<<fixed<<setprecision(6)<<ans<<'\n';
 	return 0;
 }
